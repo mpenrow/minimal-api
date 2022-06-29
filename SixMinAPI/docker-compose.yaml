@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  sqlserver:
+    image: "mcr.microsoft.com/azure-sql-edge:latest"
+    container_name: sixminapi
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "pa55w0rd!"
+      MSSQL_PID: "Developer"
+    ports:
+      - "1433:1433"
