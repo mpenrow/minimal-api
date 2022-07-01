@@ -2,6 +2,20 @@ using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using SixMinApi.Data;
 
+/* commands
+Docker start SQL image
+docker-compose up -d
+
+Docker stop SQL image
+docker-compose down
+
+Run database migrations
+dotnet ef database update
+*/
+
+
+
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddEndpointsApiExplorer();
